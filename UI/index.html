@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ebeaddab1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <nav class="linkmenu">
+            <ul id="sidemenu">
+              <li class="link">
+                <a href="#header" onclick="closemenu()">Home</a>
+              </li>
+              <li class="link">
+                <a href="#about" onclick="closemenu()">About</a>
+              </li>
+
+              <img
+                class="logo"
+                src="https://img.freepik.com/free-vector/flat-design-mm-logo-template_23-2149231118.jpg?w=2000"
+              />
+
+              <li class="link">
+                <a href="#service" onclick="closemenu()">Services</a>
+              </li>
+              <li class="link">
+                <a href="#contract" onclick="closemenu()">Contract</a>
+              </li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+          </nav>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Koe</span></h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="cointainer">
+        <div class="row">
+          <div class="about-1">
+            <img
+              src="https://thumbs.dreamstime.com/b/vertical-top-view-composition-modern-office-workspace-laptop-note-book-coffee-plant-rustic-wooden-desk-work-study-158008806.jpg"
+            />
+          </div>
+          <div class="about-2">
+            <h1 class="sub-title">About us</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              recusandae culpa officiis! At sed eos neque eveniet quod tempore
+              ut nulla maxime corporis debitis necessitatibus quae adipisci
+              reprehenderit, explicabo numquam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My service</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>
+              WEB design
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                magni ut odio rerum eum cumque deserunt corrupti non et corporis
+                sapiente earum reiciendis quod incidunt dignissimos illo, quasi
+                expedita optio!
+              </p>
+            </h2>
+          </div>
+          <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>
+              WEB design
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                magni ut odio rerum eum cumque deserunt corrupti non et corporis
+                sapiente earum reiciendis quod incidunt dignissimos illo, quasi
+                expedita optio!
+              </p>
+            </h2>
+          </div>
+          <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>
+              WEB design
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                magni ut odio rerum eum cumque deserunt corrupti non et corporis
+                sapiente earum reiciendis quod incidunt dignissimos illo, quasi
+                expedita optio!
+              </p>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contract">
+      <div class="container">
+        <div class="row">
+          <div class="contract-left">
+            <h1 class="sub-title">Contract Me</h1>
+            <div class="contract-content">
+              <div class="address">
+                <p><i class="fa-solid fa-location-dot"></i>abc@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+              </div>
+              <div class="social">
+                <a href="">
+                  <i class="fa-solid fa-z"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contract-right">
+            <p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6406440008177!2d106.72450231021239!3d10.838788457996634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527796b888b8f%3A0xb12d5163477c6af3!2zxJAuIHPhu5EgNDgvNzUgMzcsIEtQNiwgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1687417921081!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var sidemenus = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenus.style.left = "0";
+      }
+      function closemenu() {
+        sidemenus.style.left = "-100%";
+      }
+    </script>
+  </body>
+</html>
